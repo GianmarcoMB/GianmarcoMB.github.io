@@ -5,6 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Gianmarco Miranda Bueno</title>
   <meta name="description" content="Gianmarco Miranda Bueno is a Research Analyst specializing in financial and economic analysis for high-stakes commercial litigation.">
+  <link rel="canonical" href="https://gianmarcomirandabueno.com/">
+  <link rel="alternate" hreflang="en" href="https://gianmarcomirandabueno.com/">
+  <link rel="alternate" hreflang="es" href="https://gianmarcomirandabueno.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://gianmarcomirandabueno.com/">
 
   <!-- Apply saved / system colour mode before paint to avoid a flash -->
   <script>
@@ -129,6 +133,14 @@
       .site-header__name { font-size: 1.2em; }
     }
 
+    /* ---------- Header controls: language switch + toggle ---------- */
+    .site-header__controls { display: flex; align-items: center; gap: 18px; }
+    .lang-switch { font-size: .8em; line-height: 1; color: var(--theme-text-secondary); white-space: nowrap; }
+    .lang-switch a { color: var(--theme-text-secondary); }
+    .lang-switch a:hover { color: var(--theme-text); }
+    .lang-switch__current { color: var(--theme-text); font-weight: var(--font-weight-semibold); }
+    .lang-switch__sep { margin: 0 .35em; }
+
     /* ---------- Dark mode toggle ---------- */
     .toggle { position: relative; display: inline-block; width: 40px; height: 20px; transform: translateY(-2px); }
     .toggle__checkbox { appearance: none; opacity: 0; width: 0; height: 0; margin: 0; }
@@ -160,10 +172,15 @@
   <header class="site-header">
     <div class="site-header__bar">
       <a class="site-header__name" href="/">Gianmarco Miranda Bueno</a>
-      <span class="toggle">
-        <input id="mode-toggle" type="checkbox" class="toggle__checkbox" aria-label="Dark mode">
-        <label for="mode-toggle" class="toggle__label"></label>
-      </span>
+      <div class="site-header__controls">
+        <nav class="lang-switch" aria-label="Language">
+          <span class="lang-switch__current" aria-current="page">EN</span><span class="lang-switch__sep" aria-hidden="true">|</span><a href="/es/" hreflang="es" lang="es" title="Español">ES</a>
+        </nav>
+        <span class="toggle">
+          <input id="mode-toggle" type="checkbox" class="toggle__checkbox" aria-label="Dark mode">
+          <label for="mode-toggle" class="toggle__label"></label>
+        </span>
+      </div>
     </div>
   </header>
 
