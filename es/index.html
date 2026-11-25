@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gianmarco Miranda Bueno</title>
+  <meta name="description" content="Gianmarco Miranda Bueno es analista económico en una firma de consultoría especializada en análisis financiero y económico para litigios comerciales de alto perfil.">
+  <link rel="canonical" href="https://gianmarcomirandabueno.com/es/">
+  <link rel="alternate" hreflang="en" href="https://gianmarcomirandabueno.com/">
+  <link rel="alternate" hreflang="es" href="https://gianmarcomirandabueno.com/es/">
+  <link rel="alternate" hreflang="x-default" href="https://gianmarcomirandabueno.com/">
+
+  <!-- Apply saved / system colour mode before paint to avoid a flash -->
+  <script>
+    (function () {
+      var mode = null;
+      try { mode = localStorage.getItem("color-mode"); } catch (e) {}
+      if (!mode) {
+        mode = window.matchMedia && matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
+      }
+      document.documentElement.setAttribute("data-color-mode", mode);
+    })();
+  </script>
+
+  <!-- Newsreader (same family the reference site self-hosts, 24pt optical size) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400&display=swap" rel="stylesheet">
+
+  <style>
+    /* ---------- Palette ---------- */
+    :root {
+      --color-ivory-light:  #faf9f5;
+      --color-ivory-medium: #f0eee6;
+      --color-ivory-dark:   #e8e6dc;
+      --color-slate-dark:   #1f1e1d;
+      --color-slate-medium: #3d3d3a;
+      --color-slate-light:  #5e5d59;
+      --color-cloud-light:  #d1cfc5;
+      --color-cloud-medium: #b0aea5;
+      --color-cloud-dark:   #87867f;
+
+      /* Light theme (default) */
+      --theme-background:      var(--color-ivory-medium);
+      --theme-text:            var(--color-slate-dark);
+      --theme-text-secondary:  var(--color-slate-light);
+      --theme-text-link-hover: var(--color-slate-light);
+      --theme-border:          var(--color-cloud-light);
+
+      /* ---------- Type ---------- */
+      --font-text: "Newsreader", georgia, serif;
+      --font-weight-regular: 400;
+      --font-weight-medium: 500;
+      --font-weight-semibold: 600;
+      --font-weight-bold: 700;
+
+      --font-size-body: 1.25rem;   /* 20px */
+      --font-size-h1: 3.1em;
+      --font-size-h2: 1.6em;
+      --font-size-h3: 1.2em;
+      --line-height-body: 1.6;
+      --line-height-h1: 1.1;
+      --line-height-heading: 1.2;
+
+      /* ---------- Layout ---------- */
+      --max-width-narrow: 38.75rem; /* 620px */
+      --gap-md: 1.25rem;
+      --margin-sm: 1.3em;
+    }
+
+    :root[data-color-mode="dark"] {
+      --theme-background:      var(--color-slate-dark);
+      --theme-text:            var(--color-ivory-medium);
+      --theme-text-secondary:  var(--color-cloud-medium);
+      --theme-text-link-hover: var(--color-cloud-medium);
+    }
+
+    @media (max-width: 767px) {
+      :root { --font-size-h1: 2.4em; }
+    }
+
+    /* ---------- Base ---------- */
+    html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; height: 100%; }
+
+    body {
+      margin: 0;
+      min-height: 100%;
+      background-color: var(--theme-background);
+      color: var(--theme-text);
+      font-family: var(--font-text);
+      font-variation-settings: "opsz" 24;
+      font-size: var(--font-size-body);
+      font-weight: var(--font-weight-regular);
+      line-height: var(--line-height-body);
+    }
+
+    a {
+      color: var(--theme-text);
+      text-decoration: underline;
+      text-decoration-thickness: .08em;
+      text-underline-offset: .1em;
+    }
+    a:hover { color: var(--theme-text-link-hover); }
+
+    h1 { font-size: var(--font-size-h1); font-weight: var(--font-weight-bold); line-height: var(--line-height-h1); margin: 0 0 .2em; }
+    h2 { font-size: var(--font-size-h2); font-weight: var(--font-weight-semibold); line-height: var(--line-height-heading); margin: 0 0 .5em; }
+    h3 { font-size: var(--font-size-h3); font-weight: var(--font-weight-semibold); line-height: var(--line-height-heading); margin: 0 0 .7em; }
+    p  { margin: 0 0 1em; }
+    b, strong { font-weight: var(--font-weight-semibold); }
+    ::selection { color: inherit; background-color: #0064ff42; }
+
+    /* Visually hidden (the reference site's h1 is screen-reader only) */
+    .sr-only {
+      position: absolute; width: 1px; height: 1px; margin: -1px; padding: 0;
+      overflow: hidden; white-space: nowrap; border: 0;
+    }
+
+    /* ---------- Header ---------- */
+    .site-header { margin: 15px 0 25px; padding: 15px 0 10px; }
+    .site-header__bar {
+      display: flex; justify-content: space-between; align-items: center;
+      max-width: var(--max-width-narrow);
+      padding-inline: var(--gap-md); margin-inline: auto;
+    }
+    .site-header__name {
+      display: inline-flex; align-items: flex-end;
+      font-size: 1.44em; font-weight: var(--font-weight-semibold);
+      line-height: 1; text-decoration: none;
+    }
+    .site-header__name:hover { color: var(--theme-text); }
+
+    @media (max-width: 479px) {
+      .site-header__name { font-size: 1.2em; }
+    }
+
+    /* ---------- Header controls: language switch + toggle ---------- */
+    .site-header__controls { display: flex; align-items: center; gap: 18px; }
+    .lang-switch { font-size: .8em; line-height: 1; color: var(--theme-text-secondary); white-space: nowrap; }
+    .lang-switch a { color: var(--theme-text-secondary); }
+    .lang-switch a:hover { color: var(--theme-text); }
+    .lang-switch__current { color: var(--theme-text); font-weight: var(--font-weight-semibold); }
+    .lang-switch__sep { margin: 0 .35em; }
+
+    /* ---------- Dark mode toggle ---------- */
+    .toggle { position: relative; display: inline-block; width: 40px; height: 20px; transform: translateY(-2px); }
+    .toggle__checkbox { appearance: none; opacity: 0; width: 0; height: 0; margin: 0; }
+    .toggle__label {
+      position: absolute; inset: 0; cursor: pointer; border-radius: 2rem;
+      border: 1px solid var(--color-slate-dark); background-color: var(--color-ivory-light);
+    }
+    .toggle__label::before {
+      content: ""; position: absolute; bottom: 2px; left: 2px;
+      width: 14px; height: 14px; border-radius: 50%;
+      background-color: var(--color-slate-dark); transition: transform .2s;
+    }
+    :root[data-color-mode="dark"] .toggle__label::before { transform: translate(20px); }
+    .toggle__checkbox:focus-visible + .toggle__label { outline: 2px solid var(--theme-text); outline-offset: 2px; }
+
+    /* ---------- Page ---------- */
+    .container { max-width: var(--max-width-narrow); padding-inline: var(--gap-md); margin-inline: auto; }
+
+    .link-list { margin-top: var(--margin-sm); }
+    .link-list__heading { font-size: var(--font-size-h3); font-weight: var(--font-weight-semibold); }
+    .link-list ul { list-style: none; margin: 0; padding: 0; }
+    .link-list li { margin: 0; }
+    .link-list__sep { color: var(--theme-text-secondary); margin: 0 .35em; }
+
+    .site-footer { margin: 4em 0 2em; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="site-header__bar">
+      <a class="site-header__name" href="/es/">Gianmarco Miranda Bueno</a>
+      <div class="site-header__controls">
+        <nav class="lang-switch" aria-label="Idioma">
+          <a href="/" hreflang="en" lang="en" title="English">EN</a><span class="lang-switch__sep" aria-hidden="true">|</span><span class="lang-switch__current" aria-current="page">ES</span>
+        </nav>
+        <span class="toggle">
+          <input id="mode-toggle" type="checkbox" class="toggle__checkbox" aria-label="Modo oscuro">
+          <label for="mode-toggle" class="toggle__label"></label>
+        </span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <h1 class="sr-only">Gianmarco Miranda Bueno</h1>
+
+      <section class="intro">
+        <p>Gianmarco Miranda Bueno es analista económico en una firma de consultoría especializada en análisis financiero y económico para litigios comerciales de alto perfil.</p>
+        <p>Es graduado de la Universidad de Princeton, con un título en Economía y una especialización en Economía Política. Su trabajo académico se centró en el desarrollo internacional, el emprendimiento social y el design thinking.</p>
+        <p>Habla inglés, español y francés.</p>
+      </section>
+
+      <section class="link-list">
+        <h2 class="link-list__heading">Enlaces</h2>
+        <p class="link-list__row">
+          <a href="https://www.linkedin.com/in/gian-mb" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <span class="link-list__sep" aria-hidden="true">|</span>
+          <a href="https://gianmarcomirandabueno.substack.com/" target="_blank" rel="noopener noreferrer">Substack</a>
+        </p>
+      </section>
+
+      <footer class="site-footer"></footer>
+    </div>
+  </main>
+
+  <script>
+    // Dark mode toggle
+    (function () {
+      var root = document.documentElement;
+      var box = document.getElementById("mode-toggle");
+      box.checked = root.getAttribute("data-color-mode") === "dark";
+      box.addEventListener("change", function () {
+        var mode = box.checked ? "dark" : "light";
+        root.setAttribute("data-color-mode", mode);
+        try { localStorage.setItem("color-mode", mode); } catch (e) {}
+      });
+    })();
+  </script>
+</body>
+</html>
